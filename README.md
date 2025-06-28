@@ -1,8 +1,32 @@
-# La dopamina como motor de la historia
+# Índice de Contenidos
 
-- Version Corta: [versión corta](version-corta.md) _Recomendado para una lectura rápida y general_.
-- Version Completa: [versión completa](version-completa.md) _Recomendado para una lectura profunda y detallada_.
+---
 
-Importante: este proyecto es un trabajo en progreso. Si tienes sugerencias, correcciones o quieres contribuir, por favor, abre un issue o pull request en el repositorio.
+## 📑 Versión Larga:  
+**Dopamina, Estrés, Resiliencia y Cambio Social**  
+*Hacia una Agenda Argentina que Integre Neurociencia, Justicia y Territorio*
 
-Se an utilizado los modelos de OpenAI para generar el contenido de este proyecto. El objetivo es explorar cómo la dopamina ha influido en la historia humana, desde la evolución hasta la era digital, y cómo su comprensión puede ayudarnos a entender mejor nuestro comportamiento y decisiones.
+**Sumario**  
+Esta versión explora en profundidad la relación entre los procesos neurobiológicos –como la dopamina y el estrés– y los desafíos sociales, económicos y políticos en la Argentina. Integra hallazgos científicos con experiencias territoriales, ejemplos concretos y propuestas de políticas públicas para fomentar el bienestar, la resiliencia y la motivación colectiva. El texto no solo propone reducir la desigualdad material, sino también reparar la esperanza y la salud mental como condición para el desarrollo duradero. Pensado para decisores, movimientos sociales y ciudadanía activa.
+
+[Ver](version-larga.md)
+
+---
+
+## 📄 Versión Corta:  
+**Dopamina, Estrés y Esperanza: Neurociencia y Bienestar Social para Toda la Ciudadanía Argentina**
+
+**Sumario**  
+Una síntesis dirigida a cualquier argentino/a, más allá de la política, sobre cómo la motivación y el bienestar están profundamente conectados a nuestra biología y a la vida social. Se ofrecen prácticas y recomendaciones concretas para fortalecer la resiliencia, la cooperación y la esperanza en tiempos complejos, haciendo hincapié en la importancia del cuidado comunitario y el protagonismo ciudadano diario.
+
+[Ver](version-corta.md)
+
+---
+
+### ⏳ *Nota sobre la creación de estos textos*
+
+> **Estos trabajos han sido generados con el apoyo de modelos de inteligencia artificial.**  
+> La decisión de utilizar tecnología de IA se debe a la urgencia y complejidad del tema: afrontar el malestar social, la salud mental y la grieta requiere innovación, rapidez y acceso al conocimiento más actualizado. Se busca aportar una mirada integradora, basada en evidencia científica y experiencias territoriales, que ayude a construir respuestas reales para toda la sociedad argentina.
+
+---
+
