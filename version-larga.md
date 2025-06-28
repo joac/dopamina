@@ -20,7 +20,7 @@ Reconocer este patrón no implica determinismo biológico, sino la oportunidad d
 
 - **Alternancia entre extremos:** Históricamente, la convivencia entre periodos de orden autoritario y reacción popular ilustra un ciclo casi “dopaminérgico”: la motivación se orienta o a la conformidad o a la rebeldía, dificultando el acuerdo sostenido.
 - **Crisis de confianza institucional:** La percepción reiterada de inestabilidad refuerza sistemas de recompensa inmediata, afectando la visión de largo plazo.
-- **Impacto de la era digital:** Las redes sociales amplifican la búsqueda de gratificación instantánea, propiciando la “hiperactividad colectiva” y la volatibilidad emocional-política.
+- **Impacto de la era digital:** Las redes sociales amplifican la búsqueda de gratificación instantánea, propiciando la “hiperactividad colectiva” y la volatilidad emocional-política.
 
 ---
 
@@ -37,10 +37,16 @@ Para líderes políticos, sugerimos políticas públicas transversales, centrada
 - **Redes escolares de contención:** Capacitación sistemática y obligatoria para docentes en detección temprana de problemáticas, técnicas de primeros auxilios emocionales, y articulación con las familias.
 - **Telemedicina y líneas de ayuda:** Plataformas accesibles 24/7 para consultas y apoyo, en articulación con redes hospitalarias.
 
+#### Ejemplo local:
+La Ciudad de Buenos Aires ha implementado líneas telefónicas para la atención psicológica gratuita durante crisis, pero carece de redes sistemáticas en barrios populares. Esta propuesta cubriría esa necesidad.
+
 #### Propuesta 2: Promoción de la salud mental en el lugar de trabajo
 
 - Beneficios fiscales para empresas que implementen programas de bienestar y espacios de escucha (inspirado en el “Wellbeing Workplace Program” del Reino Unido).
 - Evaluación anual de clima laboral y salud psicosocial obligatoria para empresas públicas y privadas con más de 50 empleados.
+
+#### Ejemplo internacional:
+En Canadá, muchos gremios ofrecen “Employee Assistance Programs” con apoyo emocional, reduciendo el ausentismo y mejorando el clima laboral.
 
 ---
 
@@ -51,10 +57,16 @@ Para líderes políticos, sugerimos políticas públicas transversales, centrada
 - Incorporación de contenidos obligatorios de gestión emocional, resolución no violenta de conflictos y educación prosocial desde el nivel inicial hasta el secundario (siguiendo modelos de Finlandia y Escocia).
 - “Laboratorios de creatividad social” en las escuelas: proyectos aplicados, desarrollo de habilidades artísticas, científicas y tecnológicas donde canalizar la motivación y la búsqueda de sentido.
 
+#### Ejemplo local:
+Algunas escuelas bonaerenses han incorporado talleres de mindfulness, mostrando una reducción significativa en casos de bullying y mejora en la concentración.
+
 #### Propuesta 4: Participación ciudadana profunda y sostenida
 
 - Implementación de presupuestos participativos integrales en todos los municipios, con deliberación pública moderada para evitar la polarización y favorecer soluciones colaborativas.
 - Plataformas digitales de consulta permanente donde cada ciudadano pueda proponer, votar y debatir iniciativas, bajo reglas claras y mecanismos de convivencia digital (inspiradas en experiencias de Taiwán e Islandia).
+
+#### Ejemplo:
+Presupuesto participativo de Rosario, donde los vecinos deciden parte del destino de los fondos; la propuesta busca ampliar esos mecanismos y digitalizarlos para mayor inclusión.
 
 ---
 
@@ -64,6 +76,9 @@ Para líderes políticos, sugerimos políticas públicas transversales, centrada
 
 - Programas públicos que enseñen a distinguir información confiable, gestión crítica de la noticia, y cuidado del bienestar digital personal y familiar.
 - Incentivos fiscales a medios de comunicación que desarrollen contenidos sobre salud mental, bienestar y soluciones sociales.
+
+#### Ejemplo internacional:
+En Finlandia, el Ministerio de Educación lidera programas de “media literacy” desde 2014, logrando disminuir las fake news y el estrés informativo.
 
 #### Propuesta 6: Regulación del impacto de redes sociales
 
@@ -80,6 +95,9 @@ Para líderes políticos, sugerimos políticas públicas transversales, centrada
 - Espacios públicos rediseñados para el bienestar: más parques, bicicleteadas, actividades culturales abiertas.
 - Programas de “prescripción social” donde los centros de salud recomienden actividades sociales (teatro, caminatas, voluntariado).
 
+#### Ejemplo local:
+“Plazas activas” en la Ciudad de Buenos Aires han mostrado reducción en el estrés percibido por la población mayor.
+
 ---
 
 ### 5. Medidas para la estabilidad y confianza institucional
@@ -88,6 +106,9 @@ Para líderes políticos, sugerimos políticas públicas transversales, centrada
 
 - Auditorías ciudadanas de políticas públicas, comunicación proactiva y lenguaje claro.
 - Medición periódica y pública de indicadores de bienestar subjetivo y salud mental, integrados en los objetivos de la gestión pública (siguiendo el “Wellbeing Index” de Nueva Zelanda).
+
+#### Ejemplo internacional:
+Nueva Zelanda publica anualmente indicadores de salud mental y bienestar como parte central de su política económica.
 
 ---
 
@@ -107,6 +128,4 @@ Romper el ciclo requiere un salto de calidad: dejar de responder sólo a crisis 
 Lo biológico no nos condena —sólo señala caminos a recorrer. Está en nuestros líderes transformar conocimiento en oportunidades.
 
 ### “La motivación compartida es la fuerza de una nación que aprende no sólo a resistir, sino a prosperar.”
-
----
 
