@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>ADHD DSM-5 Questionnaire / Cuestionario TDAH DSM-5</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body { font-family: Arial, sans-serif; max-width: 600px; margin: auto; padding: 20px; background: #f9f9f9; }
+    h1,h2 { color: #3c4896; }
+    section { margin-bottom: 30px; }
+    .question { margin-bottom: 15px; }
+    .result { font-size: 1.2em; font-weight: bold; margin-top: 20px; }
+    button { background: #3c4896; color: #fff; border: none; padding: 10px 20px; cursor: pointer; font-size: 1em; }
+    button:hover { background: #253066; }
+    .lang-switch { margin-bottom: 20px; }
+    .lang-switch button { background: #e4e7fa; color: #3c4896; border: 1px solid #3c4896; border-radius: 4px; margin-right: 5px; font-size: 0.95em; }
+    .lang-switch button.active { background: #3c4896; color: #fff; border: none;}
+  </style>
+</head>
+<body>
+  <div class="lang-switch">
+    <button type="button" id="enBtn" class="active" onclick="setLang('en')">English</button>
+    <button type="button" id="esBtn" onclick="setLang('es')">Español</button>
+  </div>
+  <h1 id="title">ADHD DSM-5 Self-Assessment Questionnaire</h1>
+  <form id="adhdForm" autocomplete="off">
+    <section>
+      <h2 id="part1header">Part 1: Inattention</h2>
+      <div class="question">
+        <label id="q1lbl"></label><br>
+        <select name="q1" class="opt"></select>
+      </div>
+      <div class="question">
+        <label id="q2lbl"></label><br>
+        <select name="q2" class="opt"></select>
+      </div>
+      <div class="question">
+        <label id="q3lbl"></label><br>
+        <select name="q3" class="opt"></select>
+      </div>
+      <div class="question">
+        <label id="q4lbl"></label><br>
+        <select name="q4" class="opt"></select>
+      </div>
+      <div class="question">
+        <label id="q5lbl"></label><br>
+        <select name="q5" class="opt"></select>
+      </div>
+      <div class="question">
+        <label id="q6lbl"></label><br>
+        <select name="q6" class="opt"></select>
+      </div>
+      <div class="question">
+        <label id="q7lbl"></label><br>
+        <select name="q7" class="opt"></select>
+      </div>
+      <div class="question">
+        <label id="q8lbl"></label><br>
+        <select name="q8" class="opt"></select>
+      </div>
+      <div class="question">
+        <label id="q9lbl"></label><br>
+        <select name="q9" class="opt"></select>
+      </div>
+    </section>
+    <section>
+      <h2 id="part2header">Part 2: Hyperactivity and Impulsivity</h2>
+      <div class="question">
+        <label id="q10lbl"></label><br>
+        <select name="q10" class="opt"></select>
+      </div>
+      <div class="question">
+        <label id="q11lbl"></label><br>
+        <select name="q11" class="opt"></select>
+      </div>
+      <div class="question">
+        <label id="q12lbl"></label><br>
+        <select name="q12" class="opt"></select>
+      </div>
+      <div class="question">
+        <label id="q13lbl"></label><br>
+        <select name="q13" class="opt"></select>
+      </div>
+      <div class="question">
+        <label id="q14lbl"></label><br>
+        <select name="q14" class="opt"></select>
+      </div>
+      <div class="question">
+        <label id="q15lbl"></label><br>
+        <select name="q15" class="opt"></select>
+      </div>
+      <div class="question">
+        <label id="q16lbl"></label><br>
+        <select name="q16" class="opt"></select>
+      </div>
+      <div class="question">
+        <label id="q17lbl"></label><br>
+        <select name="q17" class="opt"></select>
+      </div>
+      <div class="question">
+        <label id="q18lbl"></label><br>
+        <select name="q18" class="opt"></select>
+      </div>
+    </section>
+    <button type="button" id="submitBtn" onclick="calculateRisk()">Submit</button>
+  </form>
+  <div class="result" id="result"></div>
+  <script>
+    const qTexts = {
+      en: [
+        "Often fails to give close attention to details or makes careless mistakes?",
+        "Has difficulty sustaining attention in tasks or play activities?",
+        "Does not seem to listen when spoken to directly?",
+        "Does not follow through on instructions and fails to finish tasks?",
+        "Has difficulty organizing tasks and activities?",
+        "Avoids or dislikes tasks that require sustained mental effort?",
+        "Loses things necessary for tasks and activities?",
+        "Easily distracted by extraneous stimuli?",
+        "Forgetful in daily activities?",
+        // Hyperactivity-impulsivity
+        "Fidgets with or taps hands or feet, or squirms in seat?",
+        "Leaves seat in situations when remaining seated is expected?",
+        "Runs about or climbs in situations where it is inappropriate?",
+        "Unable to play or engage in leisure activities quietly?",
+        '"On the go" acting as if "driven by a motor"?',
+        "Talks excessively?",
+        "Blurts out answers before questions have been completed?",
+        "Has difficulty waiting turn?",
+        "Interrupts or intrudes on others?"
+      ],
+      es: [
+        "¿A menudo no presta atención a los detalles o comete errores por descuido?",
+        "¿Tiene dificultad para mantener la atención en tareas o actividades recreativas?",
+        "¿Parece no escuchar cuando se le habla directamente?",
+        "¿No sigue instrucciones y no termina las tareas?",
+        "¿Tiene dificultad para organizar tareas y actividades?",
+        "¿Evita o le disgustan las tareas que requieren esfuerzo mental sostenido?",
+        "¿Pierde cosas necesarias para tareas o actividades?",
+        "¿Se distrae fácilmente con estímulos externos?",
+        "¿Es olvidadizo o olvidadiza en las actividades cotidianas?",
+        // Hiperactividad-impulsividad
+        "¿Se mueve inquietamente con las manos o los pies, o se retuerce en el asiento?",
+        "¿Se levanta en situaciones en que se espera que permanezca sentado?",
+        "¿Corre o trepa en situaciones donde no es apropiado?",
+        "¿Tiene dificultad para jugar o participar silenciosamente en actividades recreativas?",
+        "¿Está frecuentemente ‘en marcha’ o actúa como si ‘tuviera un motor’?",
+        "¿Habla en exceso?",
+        "¿Responde antes de que las preguntas hayan sido terminadas?",
+        "¿Tiene dificultad para esperar su turno?",
+        "¿Interrumpe o se entromete en los demás?"
+      ]
+    };
+
+    const partHeaders = {
+      en: ["Part 1: Inattention", "Part 2: Hyperactivity and Impulsivity"],
+      es: ["Parte 1: Desatención", "Parte 2: Hiperactividad e Impulsividad"]
+    };
+
+    const selectOpts = {
+      en: ["Never", "Rarely", "Sometimes", "Often", "Very Often"],
+      es: ["Nunca", "Raramente", "A veces", "A menudo", "Muy a menudo"]
+    };
+
+    const submitTexts = {
+      en: "Submit",
+      es: "Enviar"
+    };
+
+    const titleTexts = {
+      en: "ADHD DSM-5 Self-Assessment Questionnaire",
+      es: "Cuestionario de Autoevaluación TDAH DSM-5"
+    };
+
+    const resultsTexts = {
+      en: {
+        combined: "High risk for combined-type ADHD.",
+        inatt: "High risk for ADHD, predominantly inattentive type.",
+        hyper: "High risk for ADHD, predominantly hyperactive/impulsive type.",
+        moderate: "Moderate risk for ADHD. Consider seeking advice from a healthcare professional.",
+        low: "Low risk for ADHD according to this screening.",
+        disclaimer: "This questionnaire is not a diagnostic tool. For a proper evaluation, consult a qualified professional."
+      },
+      es: {
+        combined: "Alto riesgo de TDAH de tipo combinado.",
+        inatt: "Alto riesgo de TDAH, tipo predominantemente desatento.",
+        hyper: "Alto riesgo de TDAH, tipo predominantemente hiperactivo/impulsivo.",
+        moderate: "Riesgo moderado de TDAH. Considere buscar la opinión de un profesional de la salud.",
+        low: "Bajo riesgo de TDAH según esta evaluación.",
+        disclaimer: "Este cuestionario no es una herramienta diagnóstica. Para una evaluación adecuada, consulte con un profesional calificado."
+      }
+    };
+
+    let lang = 'en';
+
+    function setLang(l) {
+      lang = l;
+      document.getElementById('enBtn').classList.toggle('active', lang === 'en');
+      document.getElementById('esBtn').classList.toggle('active', lang === 'es');
+      document.getElementById('title').textContent = titleTexts[lang];
+      document.getElementById('part1header').textContent = partHeaders[lang][0];
+      document.getElementById('part2header').textContent = partHeaders[lang][1];
+      document.getElementById('submitBtn').textContent = submitTexts[lang];
+      // Fill labels
+      for(let i=1;i<=18;i++){
+        document.getElementById('q'+i+'lbl').textContent = (i) + '. ' + qTexts[lang][i-1];
+      }
+      // Fill select options
+      document.querySelectorAll('select.opt').forEach(select => {
+        // Save previous value if possible
+        let prev = select.selectedIndex;
+        select.innerHTML = "";
+        selectOpts[lang].forEach((opt, idx) => {
+          let optEl = document.createElement('option');
+          optEl.value = idx;
+          optEl.textContent = opt;
+          select.appendChild(optEl);
+        });
+        select.selectedIndex = prev >= 0 ? prev : 0;
+      });
+      document.getElementById('result').textContent = '';
+    }
+
+    function calculateRisk() {
+      let form = document.getElementById('adhdForm');
+      let scores = {};
+      for(let i = 1; i <= 18; i++) {
+        scores['q'+i] = parseInt(form['q'+i].value);
+      }
+      let inattention = 0, hyperimpuls = 0;
+      for(let i = 1; i <= 9; i++) {
+        if(scores['q'+i] >= 3) inattention++;
+      }
+      for(let i = 10; i <= 18; i++) {
+        if(scores['q'+i] >= 3) hyperimpuls++;
+      }
+      let risk = '';
+      if(inattention >= 6 && hyperimpuls >= 6) {
+        risk = resultsTexts[lang].combined;
+      } else if(inattention >= 6) {
+        risk = resultsTexts[lang].inatt;
+      } else if(hyperimpuls >= 6) {
+        risk = resultsTexts[lang].hyper;
+      } else if(inattention >= 4 || hyperimpuls >= 4) {
+        risk = resultsTexts[lang].moderate;
+      } else {
+        risk = resultsTexts[lang].low;
+      }
+      document.getElementById('result').textContent = risk + " " + resultsTexts[lang].disclaimer;
+    }
+
+    // Initialize on load
+    setLang('en');
+  </script>
+</body>
+</html>
+
